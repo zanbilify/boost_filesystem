@@ -1,0 +1,30 @@
+[package]
+name = "boost_filesystem"
+description = "Boost C++ library boost_filesystem packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_filesystem"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_filesystem"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_atomic = { version = "0.1.0", path = "../boost_atomic" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_container_hash = { version = "0.1.0", path = "../boost_container_hash" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_detail = { version = "0.1.0", path = "../boost_detail" }
+boost_io = { version = "0.1.0", path = "../boost_io" }
+boost_iterator = { version = "0.1.0", path = "../boost_iterator" }
+boost_predef = { version = "0.1.0", path = "../boost_predef" }
+boost_scope = { version = "0.1.0", path = "../boost_scope" }
+boost_smart_ptr = { version = "0.1.0", path = "../boost_smart_ptr" }
+boost_system = { version = "0.1.0", path = "../boost_system" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_winapi = { version = "0.1.0", path = "../boost_winapi" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
